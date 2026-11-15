@@ -80,5 +80,8 @@ committing. Run `npm run check` afterward to verify the complete set of checks.
 Watch mode is useful while developing; press `Ctrl+C` to stop it. React component
 tests currently use jsdom, a browser-like test environment running in Node.
 
+See [Testing](testing.md) for the test structure, shared setup, examples, and help
+understanding failures.
+
 To inspect the production version locally, run `npm run build`, followed by
 `npm run preview`. Open the URL printed by the preview server.
