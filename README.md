@@ -1,73 +1,41 @@
-# React + TypeScript + Vite
+# RabbitHole
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+RabbitHole is an educational project being built to teach algorithms, data
+structures, problem-solving patterns, and computer science fundamentals through
+interactive visualizations.
 
-Currently, two official plugins are available:
+The goal is to explain how these ideas work, when to use them, and how to reason
+about their time and space complexity. The project also aims to give students
+practical experience contributing features, tests, documentation, and improvements
+to a real application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project status
 
-## React Compiler
+RabbitHole is in early development. The repository currently includes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- A React and TypeScript application with a branded placeholder page and favicon.
+- Shared dark-theme colors and typography using Tailwind CSS v4.
+- ESLint, TypeScript checking, and Prettier formatting commands.
+- Vitest and React Testing Library setup with an initial component test.
+- A combined local quality-check command and development setup guide.
 
-## Expanding the ESLint configuration
+Algorithm visualizers, execution traces, playback controls, browser tests, and
+GitHub Actions CI are planned features.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech stack
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+- **Application:** React and TypeScript.
+- **Build and styling:** Vite and Tailwind CSS v4.
+- **Testing:** Vitest, React Testing Library, jest-dom, and jsdom.
+- **Code quality:** ESLint and Prettier.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The project's tested Node.js version is recorded in [`.nvmrc`](.nvmrc).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+## Getting started
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Follow the [getting-started guide](docs/getting-started.md) for environment
+requirements, dependency installation, local development, testing, formatting, and
+production previews.
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+Before submitting changes, follow the guide's
+[quality-check instructions](docs/getting-started.md#check-your-changes).
