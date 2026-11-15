@@ -18,9 +18,10 @@ RabbitHole is in early development. The repository currently includes:
 - ESLint, TypeScript checking, and Prettier formatting commands.
 - Vitest and React Testing Library setup with an initial component test.
 - A combined local quality-check command and development setup guide.
+- GitHub Actions CI for pull requests and pushes to `main`
 
-Algorithm visualizers, execution traces, playback controls, browser tests, and
-GitHub Actions CI are planned features.
+Algorithm visualizers, execution traces, playback controls, and browser tests
+are planned features.
 
 ## Tech stack
 
