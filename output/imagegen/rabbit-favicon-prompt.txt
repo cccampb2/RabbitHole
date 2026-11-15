@@ -1,0 +1,10 @@
+Mode: built-in image_gen.
+
+Initial generation prompt:
+Use case: logo-brand. Create a square favicon asset: one jumping rabbit in side profile, a clean bold silhouette filled uniformly with brand purple #9B7BFF. Long recognizable ears, small tail, clear leaping pose. Center the whole rabbit with tight balanced padding; keep it legible at 16–32px. Genuinely transparent background. No text, eyes, outlines, gradients, shading, shadows, ground, border, or extra objects.
+
+Refinement prompt used for rabbit-favicon-draft.png:
+Use case: logo-brand. Edit this jumping rabbit into a production favicon. Preserve the rabbit silhouette and jumping pose. Make the entire rabbit a completely uniform solid fill of exact hex #9B7BFF (RGB 155, 123, 255), without gradients, texture, lighting, outlines, or shadows. Remove all blue and magenta speckles, halos, and marks outside the rabbit. Everything outside the clean rabbit boundary must be genuinely fully transparent. Keep the full rabbit centered in a square canvas with balanced narrow margins, all ears, paws, and tail visible. No text or extra objects.
+
+User-approved postprocessing:
+Retain the connected rabbit silhouette, remove stray pixels, normalize all visible pixels to #9B7BFF, and preserve antialiased transparent edges. Export a 512px PNG, a 64px PNG favicon, and a multi-resolution ICO containing 16px, 32px, 48px, and 64px variants.
