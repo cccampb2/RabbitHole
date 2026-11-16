@@ -40,3 +40,9 @@ production previews.
 
 Before submitting changes, follow the guide's
 [quality-check instructions](docs/getting-started.md#check-your-changes).
+
+## Project guides
+
+- [Architecture](docs/architecture.md): current structure and planned boundaries.
+- [Testing](docs/testing.md): test tools, conventions, and current coverage.
+- [Contributing](CONTRIBUTING.md): coordination, pull requests, and review.
