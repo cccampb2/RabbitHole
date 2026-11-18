@@ -1,6 +1,6 @@
 # Getting started
 
-This guide covers running RabbitHole locally and checking your changes. Run all
+This guide covers running RabbitNotation locally and checking your changes. Run all
 commands from the project root: the folder containing `package.json`.
 
 ## Requirements
@@ -47,6 +47,12 @@ stop the server.
 
 Use a second terminal for tests and other commands while the server runs.
 
+The current app has a home page, an Algorithms placeholder at `/algorithms`, and
+a not-found page for other application paths. The navbar lists future category
+destinations; most of those pages are not implemented yet. See
+[Architecture](architecture.md#routing-and-static-hosting) for the current routing
+behavior.
+
 ## Check your changes
 
 Before submitting a pull request, run:
@@ -85,3 +91,8 @@ understanding failures.
 
 To inspect the production version locally, run `npm run build`, followed by
 `npm run preview`. Open the URL printed by the preview server.
+
+For deployment, the static host must serve `index.html` for application paths so
+direct links and refreshes work with `BrowserRouter`. Local previews alone do not
+establish that a production host has this fallback configured. See
+[Routing and static hosting](architecture.md#routing-and-static-hosting).

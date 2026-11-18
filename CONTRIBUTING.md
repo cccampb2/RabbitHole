@@ -1,6 +1,6 @@
-# Contributing to RabbitHole
+# Contributing to RabbitNotation
 
-RabbitHole aims to help people learn computer science and gain practical software
+RabbitNotation aims to help people learn computer science and gain practical software
 engineering experience. Contributions can include bug fixes, tests, documentation,
 accessibility improvements, algorithms, and visualizations.
 
@@ -24,7 +24,7 @@ If you are unsure where to start, ask for help identifying a small, useful task.
 ## Set up your working copy
 
 Contributors without repository write access should
-[fork RabbitHole](https://github.com/cccampb2/RabbitHole/fork) and clone their fork.
+[fork RabbitNotation](https://github.com/cccampb2/RabbitHole/fork) and clone their fork.
 Maintainers with write access can work on branches in the main repository.
 
 Follow the [getting-started guide](docs/getting-started.md) for the Node version,
@@ -69,6 +69,12 @@ checks, watch mode, and the formatting command.
 
 For interface changes, also inspect the affected behavior in the browser and
 describe any manual verification in your pull request.
+
+For navigation changes, check desktop and mobile layouts, link destinations, and
+keyboard behavior such as Tab and Escape. The component tests cover interactions;
+responsive styling and animation still need browser verification. See
+[Testing](docs/testing.md#styling-and-browser-behavior) for the current limits and
+planned browser coverage.
 
 ## Open a pull request
 
